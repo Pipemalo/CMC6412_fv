@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  p1(){
+    this.navCtrl.push("P1Page");
+  }
+
 }

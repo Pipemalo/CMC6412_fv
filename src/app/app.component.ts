@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 })
 export class MyApp {
   rootPage:any = HomePage;
+  pageInicio: Array<{title: string, component: any}>;
+
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -17,6 +19,11 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
+    this.pageInicio=[
+      { title: "inicio", component: HomePage},
+      { title: "Grafo Dirigido", component: "P1Page"},
+    ];
   }
 }
 

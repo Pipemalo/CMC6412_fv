@@ -1,5 +1,6 @@
 {
   "name": "CMC6412_fv",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }
